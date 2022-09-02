@@ -19,6 +19,7 @@
     /* Others */
 --items: 3;
 --indent: 30px;
+--socials-cl:#AFB1B8; 
 }
 
 .page {
@@ -106,8 +107,11 @@ padding-bottom: 32px;
 display: block;
 }
 
-.contact-icon {
-    fill: var(--supporting-txt-cl);
+.contacts-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
 }
 
 .contact-link {
@@ -117,7 +121,15 @@ letter-spacing: 0.02em;
 color: var(--supporting-txt-cl);  
 padding-top: 32px;
 padding-bottom: 32px;
-display: block;
+display: flex;
+align-items: center;
+gap: 10px;
+width: 161px;
+height: 16px;
+}
+
+.contact-icon {
+    fill: var(--supporting-txt-cl);
 }
 
 .header .link:hover,
@@ -126,6 +138,12 @@ display: block;
 .contact-link:focus {
  color: var(--accent-txt-cl);   
 }
+
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
+    fill: var(--accent-txt-cl);
+}
+
 
 .current {
     color: var(--accent-txt-cl);
@@ -174,6 +192,7 @@ color: var(--light-txt-cl);
 background-color: var(--accent-bg-cl);
 cursor: pointer;
 width: 216px;
+border-color: transparent;
 border-radius: 4px;
 padding: 8px 28px;
 }
@@ -192,6 +211,16 @@ padding: 8px 28px;
 
 .features-list-item {
     width: 270px;
+}
+
+.features-box {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 270px;
+height: 120px;
+background-color: var(--grey-bg-cl);
+margin-bottom: 30px;
 }
 
 .subtitle {
@@ -279,6 +308,42 @@ line-height: calc(19/16);
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--supporting-txt-cl);  
+margin-bottom: 30px;
+}
+
+.socials-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-icon {
+    fill: var(--socials-cl);
+}
+
+.socials-link:hover,
+.socials-link:focus  {
+    background-color: var(--accent-bg-cl);
+}
+
+.socials-link:hover .social-icon, 
+.socials-link:focus .social-icon {
+    fill: var(--main-bg-cl)
+}
+/* Clients */
+
+.clients {
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 /* Footer */
