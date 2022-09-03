@@ -19,7 +19,7 @@
     /* Others */
 --items: 3;
 --indent: 30px;
---socials-cl:#AFB1B8; 
+--icon-cl:#AFB1B8; 
 }
 
 .page {
@@ -90,7 +90,7 @@ color: var(--accent-txt-cl);
 }
 
 .nav {
-    margin-right: 344px;
+    margin-right: 318px;
 }
 
 .header-list {
@@ -109,9 +109,14 @@ display: block;
 
 .contacts-list {
     display: flex;
-    gap: 30px;
+    gap: 30px;   
+}
+
+.contact-list-item {
+    display: flex;
     align-items: center;
-    
+width: 161px;
+height: 16px;  
 }
 
 .contact-link {
@@ -119,13 +124,11 @@ font-weight: 500;
 line-height: calc(16/14);
 letter-spacing: 0.02em;
 color: var(--supporting-txt-cl);  
-padding-top: 32px;
-padding-bottom: 32px;
 display: flex;
 align-items: center;
 gap: 10px;
-width: 161px;
-height: 16px;
+width: 100%;
+height: 100%;
 }
 
 .contact-icon {
@@ -217,7 +220,7 @@ padding: 8px 28px;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 270px;
+width: 100%;
 height: 120px;
 background-color: var(--grey-bg-cl);
 margin-bottom: 30px;
@@ -317,17 +320,22 @@ margin-bottom: 30px;
     justify-content: center;
 }
 
+.socials-item {
+ width: 44px;
+height: 44px;  
+}
+
 .socials-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-}
+    }
 
 .social-icon {
-    fill: var(--socials-cl);
+    fill: var(--icon-cl);
 }
 
 .socials-link:hover,
@@ -346,12 +354,60 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-list-item {
+width: 170px;
+height: 92px;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+border-width: 1px;
+border-color: var(--icon-cl);
+border-radius: 4px;
+}
+
+.client-icon {
+    fill: var(--icon-cl);
+}
+
+.clients-link:hover,
+.clients-link:focus  {
+    border-color: var(--accent-bg-cl);
+}
+
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon  {
+    fill: var(--accent-bg-cl);
+}
+
 /* Footer */
 
 .footer {
     background-color: var(--supporting-bg-cl);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.contacts-group {
+display: block;
+width: 231px;
+margin-right: 70px;
 }
 
 .footer-logo {
@@ -365,7 +421,6 @@ text-decoration: none;
 display: block;
 margin-bottom: 20px;
 }
-
 
 .address-list-item:not(:last-child) {
 margin-bottom: 9px;
@@ -388,6 +443,19 @@ font-style: normal;
 color: var(--accent-txt-cl);    
 }
 
+.socials-subtitle {
+    color: var(--light-txt-cl);
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.footer-icon {
+    fill: var(--light-txt-cl);
+}
 /* Portfolio */
 
 .portfolio {
